@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Income</title>
+    <link rel="stylesheet" href="CSS/income.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script defer src="java/income.js"></script>
+</head>
+<body>
+
+<!--------Nav_bar------->
+        <header class="header">
+            <div class="logo"><a href="Home page.html"><img src="logo.png"> </a> </div>
+            <nav class="navbar">
+               <a href="Home page.html">Home</a>
+               <a href="Budget.html">Budget</a> 
+               <a href="Salary Sheet.html">Salary</a> 
+            </nav>
+        </header>
+<!--------Nav_bar_End------->
+    <div class="Hotel">
+
+
+<!----------Income_Start-------->
+    <div class="income">
+        <h1>Income</h1>
+
+
+
+<!----------Room_Income_Start-------->   
+        <div class="Room">
+            <div class="income1">
+                <h3>Room Income</h3>
+
+            </div>
+                        
+            <div class="detail">
+            <form>
+                <label for="date">Date  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;:</label>
+                <input type="date"  id="date-for-room"><br>
+                <label for="room">Room Number &nbsp;&nbsp;:</label>
+                <input type="text" placeholder="Inter The Room Number" class="rooms_input"id="room-for-room"><br>
+                <label for="customer">Customer Name:</label>
+                <input type="Text" placeholder="Inter The Customer Name" id="name-for-room"><br>
+                <label for="customer">Room Bill &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; :</label>
+                <input type="number" placeholder="Inter The Room Bill" id="bill-for-room"><br>
+                <button class="btn" id="btn_submit">Submit</button>
+            </form>
+
+            <div class="tbl_content">
+            <h3>Income Details</h3>
+                <div class="tbl_data" data-section="room">
+                <!-- Dynamically added expense rows will go here -->
+                </div>
+            </div>
+        </div>
+        <div class="total-income">
+            <ul>
+                <li>
+                <i id="dollar-icon" class="bx bx-dollar"></i>
+                <span class="info">
+                    <h2><span>CNY:</span><span class="incomes_card">0</span></h2>
+                    <p>Balance</p>
+                </span>
+                </li>
+            </ul>
+        </div>
+        </div>
+        
+<!----------Room_Income_End-------->
+
+<!----------Catering_Income_Start-------->      
+       <div class="Catering">
+            <div class="income1">
+                <h3>Cetering Income</h3>
+            </div>
+                <form>
+                <label for="date">Date  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;:</label>
+                <input type="date"  id="dates-for-cat"><br>
+                <label for="room">Room Number &nbsp;&nbsp;:</label>
+                <input type="text" placeholder="Inter The Room Number" id="room-for-cat"><br>
+                <label for="customer">Customer Name:</label>
+                <input type="Text" placeholder="Inter The Customer Name" id="name-for-cat"><br>
+                <label for="customer">Room Bill &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; :</label>
+                <input type="number" placeholder="Inter The Room Bill" id="bill-for-cat"><br>
+                <button class="btn" id="btn_submit1">Submit</button>
+            </form>
+            <div class="tbl_content">
+            <h3>Income Details</h3>
+                <div class="tbl_data" data-section="catering">
+                
+                </div>
+            </div>
+            <div class="total-income">
+            <ul>
+                <li>
+                <i id="dollar-icon" class="bx bx-dollar"></i>
+                <span class="info">
+                    <h2><span>CNY:</span><span class="expenses_card">0</span></h2>
+                    <p>Balance</p>
+                </span>
+                </li>
+            </ul>
+        </div>
+                    
+        </div>
+<!----------Catering_Income_End--------> 
+
+<!----------Entertainment_Income_Start-------->     
+        <div class="Entertainment">
+            <div class="income1">
+                <h3>Entertainment</h3>
+            </div>
+              <form>
+                <label for="date">Date  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;:</label>
+                <input type="date"  id="date-for-dog"><br>
+                <label for="room">Room Number &nbsp;&nbsp;:</label>
+                <input type="text" placeholder="Inter The Room Number" id="room-for-dog"><br>
+                <label for="customer">Customer Name:</label>
+                <input type="Text" placeholder="Inter The Customer Name" id="name-for-dog"><br>
+                <label for="customer">Room Bill &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; :</label>
+                <input type="number" placeholder="Inter The Room Bill" id="bill-for-dog"><br>
+                <button class="btn" id="btn_submit2">Submit</button>
+            </form>
+            <div class="tbl_content">
+            <h3>Income Details</h3>
+                <div class="tbl_data" data-section="entertainment">
+            
+                
+                </div>
+            </div>
+            <div class="total-income">
+            <ul>
+                <li>
+                <i id="dollar-icon" class="bx bx-dollar"></i>
+                <span class="info">
+                    <h2><span>CNY:</span><span class="balance_card">0</span></h2>
+                    <p>Balance</p>
+                </span>
+                </li>
+            </ul>
+        </div>   
+        </div>
+<!----------Entertainment_Income_End-------->  
+
+
+    </div>
+<!----------Income_End-------->
+
+<!----------Footer_Income_Start-------->        
+        <div class="Footer">
+            <div class="total-all-income">
+                <ul>
+                    <li>
+                        <i class="bx bx-dollar"></i>
+                        <span class="info">
+                            <h2><span>CNY:</span><span class="total_income_card">0</span></h2>
+                            <p>Total Balance</p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+             <div class="tax">
+                <ul>
+                    <li>
+                        <i class="bx bx-dollar"></i>
+                        <span class="info">
+                            <h2><span>CNY:</span><span class="total_tax_card">0</span></h2>
+                            <p>Total tax</p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+             <div class="net-blance">
+                <ul>
+                    <li>
+                        <i class="bx bx-dollar"></i>
+                        <span class="info">
+                            <h2><span>CNY:</span><span class="net_income_card">0</span></h2>
+                            <p>Total Balance</p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!----------Footer_Income_End--------> 
+
+
+
+
+ </div>
+ <!--------All_div_End------->
+
+</body>
+</html>

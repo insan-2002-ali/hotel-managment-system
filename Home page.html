@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home page</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		    box-sizing: border-box;
+			font-family: "Poppins",sans-serif;
+	}
+		body{
+			background-image: url(hotel.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+	}
+	
+		.header{
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px 100px;
+			background: grey;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100;
+	}
+	
+		.logo a img{
+			height: 30px;
+			width: 65px;
+
+	}
+		.navbar a{
+			position: relative;
+			font-size: 18px;
+			color: #fff;
+			font-weight: 500;
+			text-decoration: none;
+			margin: 40px;
+	}
+		.navbar a::before{
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width:0;
+			height: 2px;
+			background: #fff;
+			transition: .3s;
+	}
+		.navbar a:hover::before {
+			width:100%;
+	}
+	</style>
+</head>
+<body>
+	<header class="header">
+        <div class="logo"><a href="Home page.html"><img src="logo.png"> </a></div>
+        <nav class="navbar">
+            <a href="Budget.html">Budget</a>
+            <a href="income.html">Income</a>
+            <a href="Salary Sheet.html">Salary</a>
+        </nav>
+    </header>
+
+</body>
+</html>
